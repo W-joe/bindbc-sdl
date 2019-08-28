@@ -1,0 +1,22 @@
+option('sdl_version',
+	type: 'combo', choices: ['SDL_201', 'SDL_202', 'SDL_203',
+		'SDL_204', 'SDL_205', 'SDL_206', 'SDL_207',
+		'SDL_208', 'SDL_209'],
+	yield: true,
+	description: 'Choose a particular SDL version or use the first version by default.')
+
+option('sdl_image',
+	type: 'combo', choices: ['SDL_Image_201', 'SDL_Image_202'],
+	yield: true,
+	description: 'Version for the SDL Image satellite lib.')
+
+option('sdl_mixer',
+	type: 'combo', choices: ['SDL_Mixer_201', 'SDL_Mixer_202'],
+	yield: true,
+	description: 'Version for the SDL Mixer satellite lib.')
+
+option('sdl_ttf',
+	type: 'combo', choices: ['SDL_TTF_2013', 'SDL_TTF_2014'],
+	yield: true,
+	description: 'Version for the SDL TTF satellite lib.')
+
